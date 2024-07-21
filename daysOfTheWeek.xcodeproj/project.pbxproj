@@ -13,6 +13,7 @@
 		7E0D930E2C314BC500B2EC33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D930C2C314BC500B2EC33 /* Main.storyboard */; };
 		7E0D93102C314BC600B2EC33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D930F2C314BC600B2EC33 /* Assets.xcassets */; };
 		7E0D93132C314BC600B2EC33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D93112C314BC600B2EC33 /* LaunchScreen.storyboard */; };
+		7E11C7952C3AF7A3000FB91A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E11C7942C3AF7A3000FB91A /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7E0D930F2C314BC600B2EC33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0D93122C314BC600B2EC33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0D93142C314BC600B2EC33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E11C7942C3AF7A3000FB91A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7E0D93062C314BC500B2EC33 /* AppDelegate.swift */,
 				7E0D93082C314BC500B2EC33 /* SceneDelegate.swift */,
 				7E0D930A2C314BC500B2EC33 /* ViewController.swift */,
+				7E11C7942C3AF7A3000FB91A /* TableViewCell.swift */,
 				7E0D930C2C314BC500B2EC33 /* Main.storyboard */,
 				7E0D930F2C314BC600B2EC33 /* Assets.xcassets */,
 				7E0D93112C314BC600B2EC33 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E0D930B2C314BC500B2EC33 /* ViewController.swift in Sources */,
+				7E11C7952C3AF7A3000FB91A /* TableViewCell.swift in Sources */,
 				7E0D93072C314BC500B2EC33 /* AppDelegate.swift in Sources */,
 				7E0D93092C314BC500B2EC33 /* SceneDelegate.swift in Sources */,
 			);
