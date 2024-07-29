@@ -39,11 +39,12 @@ class ViewController: UIViewController {
         tableView.register(TableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
-        
     }
+
     private func setupView() {
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
+        
         tableView.leadingAnchor.constraint(
             equalTo: view.leadingAnchor
         ).isActive = true
@@ -58,36 +59,20 @@ class ViewController: UIViewController {
         ).isActive = true
     }
 }
-    extension ViewController: UITableViewDelegate, UITableViewDataSource {
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { 134 }
-        
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return dataSource.count
-        }
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { 134 }
     
-
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? TableViewCell {
-//            cell.dayLabel.text = daysOfWeek[indexPath.row]
-//            cell.dateLabel.text = dates[indexPath.row]
-//            
-//            return cell
-//        }
-//        
-//        return UITableViewCell()
-//        
-//        if создание ячейки {
-//            настройка ячейки
-//            return ячейка
-//        }
-//        return базовая ячейка
-//        
-//        guard создание ячейки else {return базовая ячейка}
-//        настройка ячейки
-//        return ячейка
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? TableViewCell else {return UITableViewCell()}
+        guard
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? TableViewCell
+        else {
+            return UITableViewCell()
+        }
         cell.configCell(
             dayName: dataSource[indexPath.row].day,
             dateName: dataSource[indexPath.row].data

@@ -112,7 +112,7 @@ class TableViewCell: UITableViewCell {
         ).isActive = true
         dayLabel.trailingAnchor.constraint(
             equalTo: dateLabel.leadingAnchor,
-            constant: Constraints.DayLabel.horizontalSpacing
+            constant: -Constraints.DayLabel.horizontalSpacing
         ).isActive = true
         dayLabel.centerYAnchor.constraint(
             equalTo: roundBackgroundView.centerYAnchor
